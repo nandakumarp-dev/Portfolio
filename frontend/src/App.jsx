@@ -1,30 +1,25 @@
-import { useEffect } from 'react';
 import AOS from 'aos';
-
-import Header from './components/Header';
+import { useEffect } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Resume from './components/Resume';
-import Portfolio from './components/Portfolio';
+import Projects from './components/Projects';
 import Services from './components/Services';
-import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init();
   }, []);
 
   return (
     <>
-      <Header />
       <Hero />
       <About />
       <Resume />
-      <Portfolio />
+      <Projects />
       <Services />
-      <Testimonials />
       <Contact />
       <Footer />
     </>

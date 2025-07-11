@@ -1,12 +1,13 @@
 function Hero() {
   return (
-    <section id="hero" className="d-flex flex-column justify-content-center align-items-center text-white text-center vh-100 bg-dark">
-      <div className="container" data-aos="fade-up">
-        <h1>Nanda Kumar</h1>
-        <p>I'm a <span className="text-info">Full Stack Developer</span></p>
-        <a href="#contact" className="btn btn-outline-light mt-3">Hire Me</a>
+    <header className="text-center hero-with-stars">
+      <h1 className="logo-glow mb-3">Nanda Kumar</h1>
+      <p className="lead mb-4">I'm a Full Stack Developer.<br />I build elegant solutions with Python, Django, and React.</p>
+      <div className="text-center">
+        <a href="#projects" className="cta-btn mt-3">View My Work</a>
       </div>
-    </section>
+    </header>
   );
 }
+
 export default Hero;

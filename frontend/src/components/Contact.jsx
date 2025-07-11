@@ -1,24 +1,21 @@
 function Contact() {
   return (
-    <section id="contact" className="py-5">
-      <div className="container" data-aos="fade-up">
-        <h2 className="mb-4">Contact</h2>
-        <form>
-          <div className="mb-3">
-            <label>Name</label>
-            <input className="form-control" type="text" placeholder="Your name" />
-          </div>
-          <div className="mb-3">
-            <label>Email</label>
-            <input className="form-control" type="email" placeholder="Your email" />
-          </div>
-          <div className="mb-3">
-            <label>Message</label>
-            <textarea className="form-control" rows="4" placeholder="Your message"></textarea>
-          </div>
-          <button className="btn btn-primary">Send</button>
-        </form>
-      </div>
+    <section className="container" id="contact">
+      <h2 className="section-title">Get In Touch</h2>
+      <form className="row g-3" data-aos="fade-up">
+        <div className="col-md-6">
+          <input type="text" className="form-control" placeholder="Your Name" />
+        </div>
+        <div className="col-md-6">
+          <input type="email" className="form-control" placeholder="Your Email" />
+        </div>
+        <div className="col-12">
+          <textarea className="form-control" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <div className="col-12 text-center">
+          <button type="submit" className="btn btn-primary">Send Message</button>
+        </div>
+      </form>
     </section>
   );
 }
