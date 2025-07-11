@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="text-center py-4 text-light bg-dark">
+    <footer className="text-center py-4 text-black ">
       <p>&copy; 2025 Nanda Kumar • Full Stack Developer Portfolio</p>
       <p>
         <a href="#about" className="text-info me-3">About</a>
