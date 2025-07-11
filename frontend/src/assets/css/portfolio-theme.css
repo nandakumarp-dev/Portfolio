@@ -1,4 +1,3 @@
-
 section {
   padding: 60px 0;
 }
@@ -23,10 +22,10 @@ header.hero-with-stars::before {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: transparent url("/assets/images/stars-bg.png") repeat;
+  background: transparent url("/assets/images/tech-circuit.png") repeat;
   animation: stars 200s linear infinite;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.1;
   background-size: contain;
 }
 @keyframes stars {
@@ -35,10 +34,10 @@ header.hero-with-stars::before {
 }
 body {
   font-family: 'Inter', sans-serif;
-  background: radial-gradient(circle at top, #1a0033, #000);
+  background: radial-gradient(circle at top, #2d0000, #000);
   background-size: 300% 300%;
   animation: bgMove 60s ease infinite;
-  color: #e0e0e0;
+  color: #ffe082;
 }
 @keyframes bgMove {
   0% { background-position: 0% 50%; }
@@ -63,19 +62,20 @@ section, header {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   text-transform: uppercase;
-  text-shadow: 0 0 20px #9f4bff;
+  color: #ffca28;
+  text-shadow: 0 0 15px #ff3d00, 0 0 30px #fdd835;
   animation: glowPulse 3s ease-in-out infinite alternate;
 }
 @keyframes glowPulse {
-  from { text-shadow: 0 0 10px #9f4bff; }
-  to { text-shadow: 0 0 30px #bb86fc; }
+  from { text-shadow: 0 0 10px #d84315; }
+  to { text-shadow: 0 0 30px #ff9800; }
 }
 .cta-btn, .btn-purple {
-  background-color: #a86ef9;
+  background-color: #b71c1c;
   color: #fff;
   font-weight: 600;
   border-radius: 1rem;
-  box-shadow: 0 0 15px #bb86fc;
+  box-shadow: 0 0 15px #ff5722;
   border: none;
   text-decoration: none;
   transition: transform 0.3s ease;
@@ -88,44 +88,45 @@ section, header {
 }
 .cta-btn:hover, .btn-purple:hover {
   transform: scale(1.05);
-  background-color: #bb86fc;
+  background-color: #c62828;
+  box-shadow: 0 0 25px #ffd600;
 }
 .section-title {
   font-family: 'Playfair Display', serif;
   font-size: 2.4rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #ffffff;
-  text-shadow: 0 0 10px #bb86fc;
+  color: #ffca28;
+  text-shadow: 0 0 10px #f57c00;
 }
 .card {
-  background: linear-gradient(145deg, #1e0033, #2c0050);
-  border: 1px solid #bb86fc44;
+  background: linear-gradient(145deg, #3e0101, #5a0303);
+  border: 1px solid #ff6f0044;
   border-radius: 1rem;
   padding: 2rem;
   color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 25px rgba(168, 110, 249, 0.15);
+  box-shadow: 0 0 25px rgba(255, 87, 34, 0.15);
   height: 100%;
 }
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 40px rgba(187, 134, 252, 0.4);
+  box-shadow: 0 0 40px rgba(255, 235, 59, 0.4);
 }
 .interactive-box {
-  background: linear-gradient(145deg, #1f0033, #2d0054);
+  background: linear-gradient(145deg, #3c0202, #600404);
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0 30px rgba(187, 134, 252, 0.2);
+  box-shadow: 0 0 30px rgba(255, 111, 0, 0.2);
   text-align: center;
 }
 footer {
-  background-color: #0a0014;
-  color: #aaa;
+  background-color: #1a0000;
+  color: #ffccbc;
   font-size: 0.9rem;
   padding: 2rem 1rem;
   text-align: center;
-  border-top: 1px solid #bb86fc33;
+  border-top: 1px solid #ff980033;
 }
 .lead {
   font-size: 1.25rem;
@@ -134,4 +135,5 @@ footer {
   text-align: center;
   line-height: 1.6;
   opacity: 0.9;
+  color: #ffebee;
 }
